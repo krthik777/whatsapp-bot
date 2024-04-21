@@ -3,6 +3,7 @@ const { Client, LocalAuth } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
 const axios = require('axios');
 
+// creating local backup for web WhatsApp credentials 
 const client = new Client({
     authStrategy: new LocalAuth({
         dataPath: 'wtauth'
